@@ -87,8 +87,15 @@
     display: flex;
     flex-direction: column-reverse;
   }
+  .buttons-to-add {
+    display: flex;
+  }
   .section-right {
+    display: flex;
+    align-self: center;
+    justify-content: center;
     text-align: center;
+    margin-right: 20px;
   }
   .but-item {
     margin-right: 15px;
