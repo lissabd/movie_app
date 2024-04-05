@@ -1,0 +1,49 @@
+@import "../../common/colors.scss";
+
+.header {
+  height: 72px;
+  width: 100%;
+  padding: 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+
+.logo {
+  color: $font-primary;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.user-image,
+.user-image img {
+  width: 38px;
+  height: 38px;
+}
+
+.custom-icon {
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+}
+.custom-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.user-menu:hover .dropdown-menu {
+  display: block;
+}

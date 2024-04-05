@@ -1,0 +1,25 @@
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 2px);
+  right: 10px;
+  background-color: rgba(48, 46, 88, 0.2);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 10 rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  z-index: 1;
+  min-width: 120px;
+  width: 100px;
+  backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.dropdown-menu li {
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu ul {
+  list-style-type: none;
+}

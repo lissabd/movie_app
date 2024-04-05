@@ -1,0 +1,13 @@
+.star-rating-item input[type="radio"] {
+  display: none;
+}
+.star-rating-item .star {
+  cursor: pointer;
+}
+.star-rating-item {
+  margin-bottom: 20px;
+}
+.rating-label {
+  margin-bottom: 5px;
+  color: white;
+}

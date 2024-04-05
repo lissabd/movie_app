@@ -1,0 +1,63 @@
+@import "../../../common/colors.scss";
+
+.review-card {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+
+  h3 {
+    font-weight: 500;
+    color: $font-secondary;
+  }
+
+  h4 {
+    font-weight: 400;
+    color: orange;
+  }
+
+  .poster {
+    width: 20%;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.review-details {
+  padding: 10px;
+  width: 80%;
+}
+
+.ratings p {
+  margin: 5px 0;
+}
+
+.review-text {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .review-card {
+    flex-direction: column;
+  }
+
+  .review-card .poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .review-card .poster img {
+    width: 80%;
+  }
+
+  .review-details {
+    width: 100%;
+    padding: 10px;
+  }
+}

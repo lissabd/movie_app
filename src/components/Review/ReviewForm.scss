@@ -1,0 +1,89 @@
+@import "../../common/colors.scss";
+
+.form-container {
+  margin-top: 70px;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  height: 70vh;
+}
+.review-block h1,
+.review-block h3,
+.poster-block p {
+  font-weight: 400;
+  color: white;
+}
+.poster-block p {
+  font-size: 15px;
+}
+
+.review-block h1 {
+  font-size: 30px;
+  color: $font-secondary;
+}
+
+.review-block,
+.rating-block,
+.poster-block {
+  flex: 1;
+}
+.review-block {
+  margin-right: 10px;
+}
+.review-section h3 {
+  font-size: 18px;
+  color: $font-secondary;
+}
+
+.review-section {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.rating-block {
+  padding: 30px;
+}
+
+.rating-block button {
+  background-color: orange;
+  color: black;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.review-section textarea::placeholder {
+  color: white;
+  font-size: 16px;
+}
+
+.review-section textarea {
+  background-color: $primary-color;
+  border: 1px solid white;
+  color: white;
+  width: 400px;
+  height: 70%;
+  resize: none;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.rating-block button {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+  .poster-block {
+    text-align: center;
+  }
+  .review-block {
+    margin-bottom: 70px;
+  }
+}

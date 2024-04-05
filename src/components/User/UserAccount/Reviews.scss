@@ -1,0 +1,19 @@
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.movies-errorr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.movies-errorr h3 {
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+}

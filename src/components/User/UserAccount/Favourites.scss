@@ -1,0 +1,52 @@
+.movies-error h3 {
+  color: white;
+}
+.fav-movies,
+.latter-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 15px;
+}
+.user-latter-movies-container,
+.user-fav-movies-container {
+  padding: 20px 10px;
+}
+.fav-mov-info,
+.latter-mov-info {
+  width: 100%;
+  height: 300px;
+  background-image: url("../../../images/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+.fav-mov-info h1,
+.latter-mov-info h1 {
+  z-index: 2;
+}
+.movies-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  width: 99%;
+}
+.movies-error h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
