@@ -61,3 +61,17 @@
   display: flex;
   flex: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    margin-top: 80px;
+  }
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar li {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
